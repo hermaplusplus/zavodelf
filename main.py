@@ -15,8 +15,8 @@ class PersistentView(discord.ui.View):
 
     @discord.ui.button(label='I Agree', style=discord.ButtonStyle.green, custom_id='persistent_view:green', emoji='\N{WHITE HEAVY CHECK MARK}')
     async def green(self, interaction: discord.Interaction, button: discord.ui.Button):
-        if 1263667072886636566 not in [r.id for r in interaction.user.roles]:
-            await interaction.user.add_roles(discord.Object(1263667072886636566), reason='User agreed to NSFW channel access terms.')
+        if 1339488727822766123 not in [r.id for r in interaction.user.roles]:
+            await interaction.user.add_roles(discord.Object(1339488727822766123), reason='User agreed to NSFW channel access terms.')
             await interaction.response.send_message('Thanks for agreeing to the terms!', ephemeral=True)
         else:
             await interaction.response.send_message('You have already agreed to the terms, but thanks for your enthusiasm!', ephemeral=True)
